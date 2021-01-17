@@ -1,0 +1,61 @@
+fields:
+    _open_registration:
+        label: sunlab.backendregistration::lang.settings.fields.open_registration.label
+        span: left
+        cssClass: w-sm
+        type: section
+
+    open_registration:
+        label: sunlab.backendregistration::lang.settings.fields.open_registration.label
+        span: left
+        cssClass: w-sm
+        type: switch
+
+    need_activation:
+        label: sunlab.backendregistration::lang.settings.fields.need_activation.label
+        comment: sunlab.backendregistration::lang.settings.fields.need_activation.comment
+        cssClass: w-sm
+        type: switch
+
+    registration_open_at:
+        label: sunlab.backendregistration::lang.settings.fields.registration_open_at.label
+        comment: sunlab.backendregistration::lang.settings.fields.registration_open_at.comment
+        span: left
+        cssClass: w-sm
+        type: datepicker
+        trigger:
+            action: enable
+            field: open_registration
+            condition: checked
+
+    _role:
+        label: sunlab.backendregistration::lang.settings.fields.role.label
+        span: left
+        type: section
+
+    role:
+        label: sunlab.backendregistration::lang.settings.fields.role.label
+        comment: sunlab.backendregistration::lang.settings.fields.role.comment
+        span: left
+        type: dropdown
+
+    _need_terms_agreement:
+        label: sunlab.backendregistration::lang.settings.fields.terms.label
+        span: left
+        type: section
+
+    need_terms_agreement:
+        label: sunlab.backendregistration::lang.settings.fields.need_terms_agreement.label
+        comment: sunlab.backendregistration::lang.settings.fields.need_terms_agreement.comment
+        span: left
+        cssClass: w-sm
+        type: switch
+
+    terms:
+        label: sunlab.backendregistration::lang.settings.fields.terms.label
+        type: richeditor
+        trigger:
+            field: need_terms_agreement
+            action: show
+            condition: checked
+
