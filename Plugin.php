@@ -20,10 +20,10 @@ class Plugin extends PluginBase
     public function pluginDetails(): array
     {
         return [
-            'name'        => 'BackendRegister',
-            'description' => 'No description provided yet...',
+            'name'        => 'Backend Registration',
+            'description' => 'sunlab.backendregistration::lang.plugin.description',
             'author'      => 'SunLab',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-user-plus'
         ];
     }
 
