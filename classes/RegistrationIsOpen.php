@@ -25,8 +25,11 @@ class RegistrationIsOpen
             ) {
                 return Backend::redirect('preregister');
             }
+
+            return Backend::redirect('');
         }
 
         return $next($request);
     }
 }
+
